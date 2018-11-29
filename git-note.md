@@ -89,14 +89,14 @@ git pull会进行合并，所以可以用git fetch先取回远程的修改
 关于reset和checkout的区别，[官网文档](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E7%BD%AE%E6%8F%AD%E5%AF%86)写得很清楚
 
 
->下面的速查表列出了命令对树的影响。 “HEAD” 一列中的 “REF” 表示该命令移动了 HEAD 指向的分支引用，而`‘HEAD’' 则表示只移动了 HEAD 自身。 特别注意 WD Safe? 一列 - 如果它标记为 NO，那么运行该命令之前请考虑一下。
->|  |HEAD|Index|Workdir|WD Safe?
->---|:--:|---:|:--:|---:
->commmit|
->reset --soft [commit]| REF| NO| NO| YES
->reset [commit]| REF| YES| NO| YES|
->reset --hard [commit]| REF| YES| YES| **NO**|
->checkout [commit]| HEAD| YES| YES| YES|
->|file
->reset (commit) [file]| NO| YES| NO| YES|
->checkout (commit) [file]| NO| YES| YES| **NO**|
+>   下面的速查表列出了命令对树的影响。 “HEAD” 一列中的 “REF” 表示该命令移动了 HEAD 指向的分支引用，而`‘HEAD’' 则表示只移动了 HEAD 自身。 特别注意 WD Safe? 一列 - 如果它标记为 NO，那么运行该命令之前请考虑一下。
+>   |  |HEAD|Index|Workdir|WD Safe?
+>   ---|:--:|---:|:--:|---:
+>   commmit|
+>   reset --soft [commit]| REF| NO| NO| YES
+>   reset [commit]| REF| YES| NO| YES|
+>   reset --hard [commit]| REF| YES| YES| **NO**|
+>   checkout [commit]| HEAD| YES| YES| YES|
+>   |file
+>   reset (commit) [file]| NO| YES| NO| YES|
+>   checkout (commit) [file]| NO| YES| YES| **NO**|

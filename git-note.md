@@ -82,7 +82,7 @@ git tag -d 删除某个标签
 
 git commit -a 跳过add阶段直接提交
 
-在window的git中，默认使用了凭证管理器，因此可以使用https的方式直接连接git，相当于每次都填写了表单
+在window的git中，默认使用了凭据管理器，因此可以使用https的方式直接连接git，相当于每次都填写了表单
 
 git pull会进行合并，所以可以用git fetch先取回远程的修改
 
